@@ -1,0 +1,42 @@
+article p{
+    background-color: aqua; 
+    padding: 25px;
+    color: #ffffff;
+}
+article > p{
+    background-color: rgb(255, 0, 0);
+     padding: 25px;
+     color: #ffffff;
+}
+article ~ p{
+    background-color: rgb(89, 0, 255);padding: 20px;
+    color: #ffffff;
+}
+article + p{
+    background-color: rgb(11, 95, 0);padding: 20px;
+    color: #ffffff;
+}
+span:first-of-type{
+    background-color: rgb(0, 0, 0);padding: 10px;
+    color: #ffffff;
+}
+input:valid{
+    background-color: rgb(255, 0, 0);padding: 10px;
+    color: #ffffff;
+}
+input:invalid{
+    background-color: rgb(0, 255, 34);padding: 10px;
+    color: #ffffff;
+}
+.boy{
+    background-color: rgb(0, 255, 34);padding: 10px;
+    color: #ffffff;
+}
+p::first-line{
+    background-color: rgb(255, 0, 0);
+}
+
+p::first-letter{
+    font-size: larger;
+    color: rgb(89, 0, 255);
+}
