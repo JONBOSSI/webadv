@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIBETHREAD™ // Quantum Luxury</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quantum-orb orb-1"></div>
+    <div class="quantum-orb orb-2"></div>
+
+    <div class="ticker-banner">
+        <div class="ticker-wrap">
+            <div class="ticker-item">GENESIS DROP 01 // QUANTUM EMBEDDED TEXTILES // CRYO-SHIPPING NATIONWIDE</div>
+            <div class="ticker-item">GENESIS DROP 01 // QUANTUM EMBEDDED TEXTILES // CRYO-SHIPPING NATIONWIDE</div>
+        </div>
+    </div>
+
+    <nav class="space-nav">
+        <div class="nav-blur-engine"></div>
+        <div class="nav-inner">
+            <a href="#" class="monogram-logo">VIBETHREAD<span class="tm">™</span></a>
+            <div class="nav-links">
+                <a href="#" class="nav-pill active">THE ARCHIVE</a>
+                <a href="#" class="nav-pill">EXPERIMENTAL</a>
+                <a href="#" class="nav-pill LABS">LABS</a>
+            </div>
+            <div class="nav-utilities">
+                <button class="nav-icon-btn">👁️</button>
+                <button class="nav-icon-btn cart-trigger" id="cart-node">
+                    <span class="cart-wireframe">🛒</span>
+                    <span class="quantum-badge" id="cart-counter">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="cinematic-hero">
+        <div class="hero-video-plate"></div>
+        <div class="hero-vignette"></div>
+        <div class="hero-core-ui">
+            <div class="telemetry-tag">SYSTEM LOG // INTEL CORE 04</div>
+            <h1 class="titan-title">ELEGANCE IN<br><span class="liquid-text">SIMPLICITY.</span></h1>
+            <p class="manifesto">
+                Tailored from 100% heavy-weight bio-synthetic organic cotton. Woven in Kyoto, calibrated for absolute thermal comfort.
+            </p>
+            <div class="matrix-actions">
+                <a href="#vault" class="btn-matrix primary"><span>EXPLORE MANIFESTO</span></a>
+                <a href="#vault" class="btn-matrix secondary"><span>LOOKBOOK .RAW</span></a>
+            </div>
+        </div>
+    </header>
+
+    <main id="vault" class="vault-container">
+        <div class="vault-header">
+            <div>
+                <h2 class="vault-title">CURRENT ARTIFACTS</h2>
+                <p class="vault-subtitle">Quantities tracked via distributed ledger architecture.</p>
+            </div>
+            <div class="dashboard-controls">
+                <button class="dash-pill active" onclick="filterGrid('all')">ALL BLOCKS</button>
+                <button class="dash-pill" onclick="filterGrid('upper')">UPPERS</button>
+                <button class="dash-pill" onclick="filterGrid('footwear')">FOOTWEAR</button>
+            </div>
+        </div>
+
+        <div class="quantum-grid" id="product-grid">
+            
+            <div class="hologram-card" data-tier="upper">
+                <div class="lens-plate">
+                    <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=800&q=80" alt="Artifact 01">
+                    <div class="scarcity-mesh">BATCH 01/100</div>
+                </div>
+                <div class="card-telemetry">
+                    <div class="meta-row">
+                        <span class="serial-num">ID: VT-882</span>
+                        <span class="metric-bar">99.4% SATISFACTION</span>
+                    </div>
+                    <div class="title-row">
+                        <h3 class="artifact-name">EVERYDAY HOODIE v1.0</h3>
+                        <span class="currency">$450.00</span>
+                    </div>
+                    <p class="artifact-spec">Boxy structured fit, dropped shoulder matrix, high-density weave composition.</p>
+                    <button class="transaction-trigger" onclick="initiateTransaction(this, 'EVERYDAY HOODIE v1.0')">
+                        <span class="btn-label">INITIATE TRANSACTION</span>
+                        <span class="btn-vector">➔</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hologram-card" data-tier="upper">
+                <div class="lens-plate">
+                    <img src="https://images.unsplash.com/photo-1581655353564-df123a1eb820?auto=format&fit=crop&w=800&q=80" alt="Artifact 02">
+                    <div class="scarcity-mesh">BATCH 04/100</div>
+                </div>
+                <div class="card-telemetry">
+                    <div class="meta-row">
+                        <span class="serial-num">ID: VT-104</span>
+                        <span class="metric-bar">100% TRACEABLE</span>
+                    </div>
+                    <div class="title-row">
+                        <h3 class="artifact-name">BOXY CROPPED TEE</h3>
+                        <span class="currency">$180.00</span>
+                    </div>
+                    <p class="artifact-spec">Combed long-staple organic fibers, silicone anti-shrink washed treatment.</p>
+                    <button class="transaction-trigger" onclick="initiateTransaction(this, 'BOXY CROPPED TEE')">
+                        <span class="btn-label">INITIATE TRANSACTION</span>
+                        <span class="btn-vector">➔</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="hologram-card" data-tier="footwear">
+                <div class="lens-plate">
+                    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=800&q=80" alt="Artifact 03">
+                    <div class="scarcity-mesh">OUT OF STOCK INCOMING</div>
+                </div>
+                <div class="card-telemetry">
+                    <div class="meta-row">
+                        <span class="serial-num">ID: VT-909</span>
+                        <span class="metric-bar">LIMITED RUN</span>
+                    </div>
+                    <div class="title-row">
+                        <h3 class="artifact-name">AERO PACE SNEAKER</h3>
+                        <span class="currency">$1,200.00</span>
+                    </div>
+                    <p class="artifact-spec">Cloud-foam injection sub-insoles, geometric breathable outer cage exoskeleton.</p>
+                    <button class="transaction-trigger" onclick="initiateTransaction(this, 'AERO PACE SNEAKER')">
+                        <span class="btn-label">INITIATE TRANSACTION</span>
+                        <span class="btn-vector">➔</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="quantum-footer">
+        <div class="footer-grid">
+            <div>
+                <span class="monogram-logo text-white">VIBETHREAD<span class="tm">™</span></span>
+                <p class="legal-spec">All assets distributed under strict digital token custody agreements.</p>
+            </div>
+            <div class="footer-terminal-links">
+                <a href="#">ACCESS_PROTOCOL</a>
+                <a href="#">TERMS_OF_UTILITY</a>
+                <a href="#">DIRECT_SUPPORT</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let itemsCount = 0;
+
+        function initiateTransaction(button, itemName) {
+            if (button.classList.contains('processing')) return;
+            
+            button.classList.add('processing');
+            const label = button.querySelector('.btn-label');
+            const vector = button.querySelector('.btn-vector');
+            
+            label.innerText = "ALLOCATING ASSET...";
+            vector.innerText = "⏳";
+
+            setTimeout(() => {
+                button.classList.remove('processing');
+                button.classList.add('success');
+                label.innerText = "TRANSACTION SECURED";
+                vector.innerText = "✓";
+                
+                itemsCount++;
+                const badge = document.getElementById('cart-counter');
+                badge.innerText = itemsCount;
+                badge.style.transform = 'scale(1.5) rotate(12deg)';
+                
+                setTimeout(() => {
+                    badge.style.transform = 'scale(1) rotate(0deg)';
+                    button.classList.remove('success');
+                    label.innerText = "INITIATE TRANSACTION";
+                    vector.innerText = "➔";
+                }, 1500);
+
+            }, 1800);
+        }
+
+        function filterGrid(tier) {
+            const cards = document.querySelectorAll('.hologram-card');
+            cards.forEach(card => {
+                card.style.opacity = '0';
+                card.style.transform = 'scale(0.95) translateY(10px)';
+                
+                setTimeout(() => {
+                    if (tier === 'all' || card.getAttribute('data-tier') === tier) {
+                        card.style.display = 'flex';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1) translateY(0)';
+                        }, 50);
+                    } else {
+                        card.style.display = 'none';
+                    }
+                }, 300);
+            });
+
+            const pills = document.querySelectorAll('.dash-pill');
+            pills.forEach(pill => pill.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>

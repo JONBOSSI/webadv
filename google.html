@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Search</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align:center;
+            margin-top:150px;
+        }
+
+        h1{
+            font-size:60px;
+        }
+
+        input{
+            width:500px;
+            padding:15px;
+            border-radius:30px;
+            border:1px solid #ccc;
+            font-size:18px;
+        }
+
+        button{
+            padding:12px 25px;
+            margin-top:20px;
+            font-size:16px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+
+<h1>My Search</h1>
+
+<input type="text" id="search" placeholder="Search...">
+<br>
+<button onclick="searchSite()">Search</button>
+
+<script>
+function searchSite() {
+    let query = document.getElementById("search").value.toLowerCase();
+
+    const sites = {
+        "tiktok": "https://www.tiktok.com",
+        "youtube": "https://www.youtube.com",
+        "google": "https://www.google.com",
+        "facebook": "https://www.facebook.com",
+        "instagram": "https://www.instagram.com",
+        "twitter": "https://x.com",
+        "reddit": "https://www.reddit.com"
+    };
+
+    if (sites[query]) {
+        window.location.href = sites[query];
+    } else {
+        alert("Website not found!");
+    }
+}
+</script>
+<script>
+function searchSite() {
+    let query = document.getElementById("search").value.trim();
+
+    window.location.href = "https://www." + query + ".com";
+}
+</script>
+
+</body>
+</html>

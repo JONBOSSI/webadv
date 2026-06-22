@@ -1,0 +1,389 @@
+/* --- INFINITE LUXURY STYLING ROOT SYSTEM --- */
+:root {
+    --neon-glow: #ffffff;
+    --liquid-purple: #8b5cf6;
+    --dark-void: #030303;
+    --glass-background: rgba(10, 10, 10, 0.45);
+    --border-glow: rgba(255, 255, 255, 0.08);
+    --font-mono: 'Courier New', Courier, monospace;
+    --ease-quantum: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* --- SYSTEM DECORATION SETTINGS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif;
+    letter-spacing: -0.02em;
+}
+
+body {
+    background-color: var(--dark-void);
+    color: #f4f4f5;
+    overflow-x: hidden;
+}
+
+/* AMBIENT LIGHTING BACKGROUND ORBS */
+.quantum-orb {
+    position: fixed;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, rgba(0,0,0,0) 70%);
+    z-index: -1;
+    pointer-events: none;
+    filter: blur(40px);
+}
+.orb-1 { top: -200px; right: -100px; }
+.orb-2 { bottom: -200px; left: -100px; }
+
+/* --- TICKER ANNOUNCEMENT --- */
+.ticker-banner {
+    background: #000;
+    border-bottom: 1px solid var(--border-glow);
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 12px 0;
+}
+.ticker-wrap {
+    display: inline-block;
+    animation: tickerLoop 25s linear infinite;
+}
+.ticker-item {
+    display: inline-block;
+    padding-right: 40px;
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 2px;
+}
+@keyframes tickerLoop {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* --- ZERO-GRAVITY NAVBAR --- */
+.space-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.nav-blur-engine {
+    position: absolute;
+    inset: 0;
+    background: var(--glass-background);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-glow);
+}
+.nav-inner {
+    position: relative;
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.monogram-logo {
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: #fff;
+    text-decoration: none;
+}
+.tm { font-size: 9px; vertical-align: super; color: var(--liquid-purple); }
+
+.nav-links { display: flex; gap: 8px; }
+.nav-pill {
+    padding: 8px 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    border-radius: 99px;
+    transition: all 0.4s var(--ease-quantum);
+    border: 1px solid transparent;
+}
+.nav-pill.active, .nav-pill:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+    border-color: rgba(255,255,255,0.1);
+}
+
+.nav-utilities { display: flex; gap: 16px; }
+.nav-icon-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--border-glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.nav-icon-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.3); }
+
+.quantum-badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background: #fff;
+    color: #000;
+    font-size: 10px;
+    font-weight: 900;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s var(--ease-quantum);
+}
+
+/* --- THE 8K CINEMATIC HERO --- */
+.cinematic-hero {
+    position: relative;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    overflow: hidden;
+}
+.hero-video-plate {
+    position: absolute;
+    inset: 0;
+    background-image: url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    transform: scale(1.05);
+    filter: brightness(0.35) contrast(1.1);
+}
+.hero-vignette {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, var(--dark-void) 0%, rgba(0,0,0,0) 50%),
+                linear-gradient(to right, var(--dark-void) 0%, rgba(0,0,0,0) 40%);
+}
+.hero-core-ui { position: relative; max-width: 800px; z-index: 10; }
+.telemetry-tag {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--liquid-purple);
+    letter-spacing: 3px;
+    margin-bottom: 24px;
+}
+.titan-title {
+    font-size: 84px;
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    margin-bottom: 24px;
+}
+.liquid-text {
+    background: linear-gradient(90deg, #fff 0%, rgba(255,255,255,0.3) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.manifesto {
+    font-size: 18px;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.6);
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+.matrix-actions { display: flex; gap: 16px; }
+.btn-matrix {
+    padding: 18px 40px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: all 0.4s var(--ease-quantum);
+}
+.btn-matrix.primary {
+    background: #fff;
+    color: #000;
+}
+.btn-matrix.primary:hover {
+    background: var(--liquid-purple);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+}
+.btn-matrix.secondary {
+    background: rgba(255,255,255,0.03);
+    color: #fff;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.btn-matrix.secondary:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.4); }
+
+/* --- THE SHOP VAULT GRID --- */
+.vault-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 100px 40px;
+}
+.vault-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    padding-bottom: 32px;
+}
+.vault-title { font-size: 36px; font-weight: 900; letter-spacing: -1px; }
+.vault-subtitle { font-family: var(--font-mono); font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 8px; }
+
+.dashboard-controls { display: flex; gap: 8px; }
+.dash-pill {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.6);
+    padding: 10px 24px;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: var(--font-mono);
+    transition: all 0.3s ease;
+}
+.dash-pill.active, .dash-pill:hover {
+    border-color: #fff;
+    color: #fff;
+    background: rgba(255,255,255,0.05);
+}
+
+/* HOLOGRAPHIC CARDS SETUP */
+.quantum-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 48px;
+}
+.hologram-card {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 8px;
+    padding: 16px;
+    transition: all 0.6s var(--ease-quantum);
+}
+.hologram-card:hover {
+    border-color: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.02);
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.lens-plate {
+    position: relative;
+    aspect-ratio: 1/1;
+    background: #0d0d0d;
+    overflow: hidden;
+    border-radius: 4px;
+}
+.lens-plate img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(0.85);
+    transition: transform 0.8s var(--ease-quantum);
+}
+.hologram-card:hover .lens-plate img { transform: scale(1.03); filter: saturate(1.1); }
+
+.scarcity-mesh {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid rgba(255,255,255,0.15);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    font-family: var(--font-mono);
+    font-size: 10px;
+    padding: 6px 14px;
+    border-radius: 2px;
+    letter-spacing: 1px;
+}
+
+/* METADATA DESCRIPTIONS */
+.card-telemetry { padding: 24px 8px 8px 8px; display: flex; flex-direction: column; flex-grow: 1; }
+.meta-row { display: flex; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,0.4); margin-bottom: 12px; }
+.title-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 12px; }
+.artifact-name { font-size: 20px; font-weight: 800; letter-spacing: -0.5px; }
+.currency { font-size: 20px; font-weight: 400; color: var(--liquid-purple); }
+.artifact-spec { font-size: 14px; color: rgba(255,255,255,0.5); line-height: 1.5; margin-bottom: 32px; flex-grow: 1; }
+
+/* QUANTUM LIQUID-METAL TRANSACTION BUTTON */
+.transaction-trigger {
+    width: 100%;
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 18px 24px;
+    font-weight: 800;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.4s var(--ease-quantum);
+}
+.transaction-trigger:hover {
+    background: var(--liquid-purple);
+    color: #fff;
+}
+.transaction-trigger.processing {
+    background: #111 !important;
+    color: rgba(255,255,255,0.4) !important;
+    cursor: not-allowed;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+.transaction-trigger.success {
+    background: #10b981 !important;
+    color: white !important;
+}
+
+/* --- INTEL TERMINAL FOOTER --- */
+.quantum-footer {
+    border-top: 1px solid rgba(255,255,255,0.05);
+    background: #000;
+    padding: 80px 40px;
+}
+.footer-grid {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.legal-spec { font-family: var(--font-mono); font-size: 11px; color: rgba(255,255,255,0.3); margin-top: 8px; }
+.footer-terminal-links a { font-family: var(--font-mono); font-size: 12px; color: rgba(255,255,255,0.5); margin-left: 32px; text-decoration: none; transition: color 0.3s; }
+.footer-terminal-links a:hover { color: #fff; }
+.legal-spec { width: 100%; }
+
+/* MOBILE RESPONSIVE OPTIMIZATION OVERRIDES */
+@media (max-width: 768px) {
+    .nav-links, .dashboard-controls { display: none; }
+    .cinematic-hero { padding: 0 24px; height: 75vh; }
+    .titan-title { font-size: 48px; }
+    .vault-header { flex-direction: column; align-items: flex-start; gap: 16px; }
+    .quantum-grid { grid-template-columns: 1fr; }
+}
