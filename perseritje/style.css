@@ -1,0 +1,24 @@
+.container{
+       display: flex;
+       background-color: red;
+       flex-direction: row ;
+}
+.container div {
+    background-color: honeydew;
+    margin: 10px;
+    padding: 20px;
+    font-size: 35 px;
+    /* widhth: 30%; */
+}
+.container div:nth-child(1){
+    order: 2;
+}
+.container div:nth-child(2){
+    order: 3;
+}
+.container div:nth-child(3){
+    order: 0;
+}
+.container div:nth-child(1){
+    order: 1;
+}
