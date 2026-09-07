@@ -1,0 +1,45 @@
+.card{
+ color: white;
+ background-color: gold;
+ text-align: center;
+ width: 350px;
+ height: 450px;
+
+}
+.card button{
+color: blueviolet;
+background-color: crimson;
+
+}
+.card1{
+color: white;
+ background-color: gold;
+ text-align: center;
+ width: 350px;
+ height: 450px;
+
+
+}
+.card1 button{
+color: blueviolet;
+background-color: crimson;
+
+}
+.card2{
+    color: white;
+ background-color: gold;
+ text-align: center;
+ width: 350px;
+ height: 450px;
+
+}
+.card2 button{
+color: blueviolet;
+background-color: crimson;
+
+}
+.main{
+    display: flex;
+    display: flexbox ;
+    justify-content: space-evenly;
+}
