@@ -34,6 +34,23 @@ nav ul li{
     align-items: center;
     justify-content: center;
 }
+.mes{
+    text-align: center;
+}
+.spain{
+    justify-content: right;
+    text-align: right;
+    width: 300px;
+    height:  500px;
+    margin-left: 650px;
+}
+.shop1{
+    background-color: yellow;
+    text-align: center;
+    color: white;
+    width: 350px;
+    height: 650px;
+}
 
 
 
