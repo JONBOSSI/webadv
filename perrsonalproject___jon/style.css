@@ -47,12 +47,68 @@ nav ul li{
 .shop1{
     background-color: yellow;
     text-align: center;
-    color: white;
-    width: 350px;
+    color: rgb(0, 140, 255);
+    width: 450px;
     height: 650px;
+    justify-content: center;
+}
+.shop1 img{
+    text-align: center;
+    justify-content: center;
+    padding-right: 50px;
+    
+}
+.shop1 button{
+    background-color: aqua;
+}
+.shop2{
+    background-color: crimson;
+    text-align: center;
+    color: darkgoldenrod;
+    width: 450px;
+    height: 650px;
+    justify-content: center;
+}
+.shop2 button{
+    background-color: darkgoldenrod;
+    color: red;
+}
+.shop2 img{
+width: 75%;
+height: 58%;
+
+}
+.mainshop{
+    justify-content: space-evenly;
+    display: flex;
 }
 
-
+.goodmain{
+    display: flex;
+    justify-content: space-evenly;
+}
+.shop3{
+    text-align: center;
+    background-color: crimson;
+    color: rgb(229, 255, 0);
+    width: 450px;
+    height: 650px;
+}
+.shop3 button{
+    background-color: darkgoldenrod;
+    color: azure;
+}
+.contact{
+    text-align: center;
+    background-color: blue;
+    color: chartreuse;
+    width: 625px;
+    height: 600px;
+}
+.themain{
+    display: flex;
+    justify-content: center;
+}
 
 
 
