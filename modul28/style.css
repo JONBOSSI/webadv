@@ -1,0 +1,8 @@
+.text{
+    background-color:  aqua;
+    font: 200;
+    color: maroon;
+}
+.hide{
+    display: none;
+}

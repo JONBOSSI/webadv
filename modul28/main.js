@@ -25,5 +25,21 @@ alert ("start engien")
 
 
    } 
+var test=document.getElementById("test")
+var text=document.getElementById("text")
 
+text.onmouseover=function(){
+   text.style.cssText="color:red; background-color:gray"
+}
     
+
+test.onclick=function(){
+ text.setAttribute("class","test")
+
+}
+var test=document.getElementById("displaynone")
+
+btn2.onclick=function(){
+btn2.setAttribute("cassl","hide")
+
+}
