@@ -1,0 +1,18 @@
+body{
+    width: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+h1{
+    font-size: 20px;
+}
+button{
+    color: white;
+    background-color: black;
+    
+}
+select{
+    color: azure;
+    background-color: black;
+}
